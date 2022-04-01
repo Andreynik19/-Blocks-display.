@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(../images/headerback.jpg);
+    /*обращаемся к хедеру и задаем ему общую картинку*/
+    background-repeat: no-repeat;
+    /*отмена повторения фонового изображения*/
+    background-position: 80%;
+    /*располагаем фоновую картинку*/
+    background-color: #FBFBFB;
+    /*подбираем цвет и заливаем фон*/
+    font-family: Tahoma;
+    padding: 30px;
+    /*jотрываем элементы от краев*/
+}
+
+.container {
+    max-width: 1200px;
+    /*задаем контейнеру максимально допустимую ширину. цифра измеряется по макету*/
+    margin: auto;
+    /*автоматические маржины, которые распределяются одинаково по краям*/
+}
+
+.logo {
+    display: inline-block;
+    /*присваиваем ссылке а с классом лого свойство диб, чтобы она располагалась вместе с соседними элементами в строчку*/
+    width: 40%;
+    vertical-align: middle;
+    /*вертикальное выравнивание по вертикальному центру, прописываем в каждом из трех элементов*/
+}
+
+.separator {
+    display: inline-block;
+    /*переходим на второй элемент*/
+    width: 2px;
+    /* в пикселях, птм это див кот д иметь конкр высоту*/
+    height: 60px;
+    /*выставляем на высоту всего хедера*/
+    background-image: linear-gradient(to top, #FBFBFB, #c0b7b7, #FBFBFB);
+    /*делаем заливку элемента с помощью градиента*/
+    margin-right: 30px;
+    vertical-align: middle;
+}
+
+.header-text {
+    display: inline-block;
+    width: 55%;
+    vertical-align: middle;
+}
+
+.selekted-text {
+    color: rgb(124, 170, 185);
+}
